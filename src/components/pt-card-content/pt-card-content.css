@@ -1,0 +1,7 @@
+:host {
+    display: block;
+}
+
+.card-content {
+    padding: var(--pt-card-padding);
+}
