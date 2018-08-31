@@ -1,6 +1,6 @@
 {
   "name": "pilot-components",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Pilot components",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/pilot-team/pilot-components.git"
   },
-  "author": "Ionic Team",
+  "author": "Pilot Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/pilot-team"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/pilot-team",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
