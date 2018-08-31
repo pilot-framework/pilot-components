@@ -5,7 +5,7 @@ import { Component } from '@stencil/core';
   styleUrl: 'pt-card.css',
   shadow: true
 })
-export class PtButton {
+export class PtCard {
 
   get BEM(): string {
       const classArray = ['card'];
