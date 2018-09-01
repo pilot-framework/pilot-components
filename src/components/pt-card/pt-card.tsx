@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'pt-card',
@@ -6,6 +6,7 @@ import { Component } from '@stencil/core';
   shadow: true
 })
 export class PtCard {
+  @Prop() imageSrc: any;
 
   get BEM(): string {
       const classArray = ['card'];
@@ -15,9 +16,14 @@ export class PtCard {
 
   render() {
     return (
-      <card class={this.BEM}>
-        <slot />
-      </card>
+      <div class={this.BEM}>
+        <div class="card__cover">
+          <img src={this.imageSrc} />
+        </div>
+        <div class="card__content">
+          <slot />
+        </div>
+      </div>
     );
   }
 }

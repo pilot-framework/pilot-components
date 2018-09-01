@@ -31,7 +31,7 @@ declare global {
   namespace StencilComponents {
     interface PtAlert {
       'type': 'submit' | 'alert';
-      'variant': 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+      'variant': 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger';
     }
   }
 
@@ -55,7 +55,40 @@ declare global {
   namespace JSXElements {
     export interface PtAlertAttributes extends HTMLAttributes {
       'type'?: 'submit' | 'alert';
-      'variant'?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+      'variant'?: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger';
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PtButtonGroup {
+
+    }
+  }
+
+  interface HTMLPtButtonGroupElement extends StencilComponents.PtButtonGroup, HTMLStencilElement {}
+
+  var HTMLPtButtonGroupElement: {
+    prototype: HTMLPtButtonGroupElement;
+    new (): HTMLPtButtonGroupElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-button-group': HTMLPtButtonGroupElement;
+  }
+  interface ElementTagNameMap {
+    'pt-button-group': HTMLPtButtonGroupElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-button-group': JSXElements.PtButtonGroupAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtButtonGroupAttributes extends HTMLAttributes {
+
     }
   }
 }
@@ -92,6 +125,7 @@ declare global {
   namespace JSXElements {
     export interface PtButtonAttributes extends HTMLAttributes {
       'disabled'?: boolean;
+      'onOnClick'?: (event: CustomEvent) => void;
       'size'?: 'sm' | 'lg';
       'type'?: 'submit' | 'button';
       'variant'?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
@@ -103,74 +137,8 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface PtCardContent {
-
-    }
-  }
-
-  interface HTMLPtCardContentElement extends StencilComponents.PtCardContent, HTMLStencilElement {}
-
-  var HTMLPtCardContentElement: {
-    prototype: HTMLPtCardContentElement;
-    new (): HTMLPtCardContentElement;
-  };
-  interface HTMLElementTagNameMap {
-    'pt-card-content': HTMLPtCardContentElement;
-  }
-  interface ElementTagNameMap {
-    'pt-card-content': HTMLPtCardContentElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'pt-card-content': JSXElements.PtCardContentAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface PtCardContentAttributes extends HTMLAttributes {
-
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
-    interface PtCardCover {
-      'src': any;
-    }
-  }
-
-  interface HTMLPtCardCoverElement extends StencilComponents.PtCardCover, HTMLStencilElement {}
-
-  var HTMLPtCardCoverElement: {
-    prototype: HTMLPtCardCoverElement;
-    new (): HTMLPtCardCoverElement;
-  };
-  interface HTMLElementTagNameMap {
-    'pt-card-cover': HTMLPtCardCoverElement;
-  }
-  interface ElementTagNameMap {
-    'pt-card-cover': HTMLPtCardCoverElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'pt-card-cover': JSXElements.PtCardCoverAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface PtCardCoverAttributes extends HTMLAttributes {
-      'src'?: any;
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
     interface PtCard {
-
+      'imageSrc': any;
     }
   }
 
@@ -193,7 +161,7 @@ declare global {
   }
   namespace JSXElements {
     export interface PtCardAttributes extends HTMLAttributes {
-
+      'imageSrc'?: any;
     }
   }
 }

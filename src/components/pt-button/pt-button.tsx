@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'pt-button',
@@ -11,6 +11,7 @@ export class PtButton {
   @Prop() variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
   @Prop() size?: 'sm' | 'lg';
   @Prop() disabled?: boolean;
+  @Event() onClick: EventEmitter;
 
   get BEM(): string {
       const classArray = ['button'];
@@ -30,9 +31,16 @@ export class PtButton {
       return classArray.join(' ');
   }
 
+  handleClick = (event: UIEvent) => {
+      console.log(event)
+    // if(this.onClick) {
+    //     this.onClick(event);
+    // }
+  }
+
   render() {
     return (
-      <button type={this.type} class={this.BEM} disabled={this.disabled}>
+      <button type={this.type} class={this.BEM} disabled={this.disabled} onClick={this.handleClick}>
         <slot />
       </button>
     );

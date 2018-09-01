@@ -1,14 +1,14 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'pt-card-content',
-  styleUrl: 'pt-card-content.scss',
-  shadow: true
+  tag: 'pt-button-group',
+  styleUrl: 'pt-button-group.scss',
+  shadow: false
 })
-export class PtCardContent {
+export class PtButtonGroup {
 
   get BEM(): string {
-      const classArray = ['card-content'];
+      const classArray = ['button-group'];
 
       return classArray.join(' ');
   }

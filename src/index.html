@@ -9,23 +9,53 @@
 
 </head>
 <body>
-  Variants
-  <pt-button variant="primary">Primary button</pt-button>
-  <pt-button variant="secondary">Secondary button</pt-button>
-  <pt-button variant="success">Success button</pt-button>
-  <pt-button variant="warning">Warning button</pt-button>
-  <pt-button variant="danger">Danger button</pt-button>
-  Sizes
-  <pt-button variant="success" size="sm">Small button</pt-button>
-  <pt-button variant="danger" size="lg">Large button</pt-button>
-  Card
-  <pt-card>
-    <pt-card-cover src="https://via.placeholder.com/512x256"></pt-card-cover>
-    <pt-card-content>
-      <h1>This is heading 1</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio placeat tempore aliquid aperiam, magnam repudiandae dolores, officia eius assumenda blanditiis. Expedita provident ipsa atque debitis, repudiandae perferendis voluptatem accusamus!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio placeat tempore aliquid aperiam, magnam repudiandae dolores, officia eius assumenda blanditiis. Expedita provident ipsa atque debitis, repudiandae perferendis voluptatem accusamus!</p>
-    </pt-card-content>
-  </pt-card>
+  <div style="max-width: 768px;margin: auto;">
+    <h1>Pilot Components</h1>
+    <ul>
+      <li><a href="#buttons">Buttons</a></li>
+      <li><a href="#buttons">Alerts</a></li>
+      <li><a href="#buttons">Cards</a></li>
+    </ul>
+    <div id="buttons">
+        <h2>Buttons</h2>
+        <h3>Variants</h3>
+        <pt-button-group>
+          <pt-button variant="primary">Primary button</pt-button>
+          <pt-button variant="secondary">Secondary button</pt-button>
+          <pt-button variant="success">Success button</pt-button>
+          <pt-button variant="warning">Warning button</pt-button>
+          <pt-button variant="danger">Danger button</pt-button>
+        </pt-button-group>
+        <h3>Sizes</h3>
+        <pt-button-group>
+          <pt-button variant="success" size="sm">Small button</pt-button>
+          <pt-button variant="success">Default button</pt-button>
+          <pt-button variant="danger" size="lg">Large button</pt-button>
+        </pt-button-group>
+    </div>
+    <div id="alerts">
+      <h2>Alerts</h2>
+      <pt-alert variant="info">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum.</p>
+      </pt-alert>
+      <pt-alert variant="success">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum.</p>
+      </pt-alert>
+      <pt-alert variant="danger">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum.</p>
+      </pt-alert>
+      <pt-alert variant="warning">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum.</p>
+      </pt-alert>
+    </div>
+    <div id="card">
+      <h2>Card</h2>
+      <pt-card imageSrc="https://via.placeholder.com/512x256">
+        <h1>This is heading 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio placeat tempore aliquid aperiam, magnam repudiandae dolores, officia eius assumenda blanditiis. Expedita provident ipsa atque debitis, repudiandae perferendis voluptatem accusamus!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio placeat tempore aliquid aperiam, magnam repudiandae dolores, officia eius assumenda blanditiis. Expedita provident ipsa atque debitis, repudiandae perferendis voluptatem accusamus!</p>
+      </pt-card>
+  </div>
+  </div>
 </body>
 </html>

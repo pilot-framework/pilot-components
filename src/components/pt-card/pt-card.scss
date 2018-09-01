@@ -1,7 +1,18 @@
 :host {
     display: block;
+    margin: 1rem 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .card {
     position: relative;
+    margin: $pt-space-y;
+}
+
+.card__content {
+    padding: $pt-space-x;
 }

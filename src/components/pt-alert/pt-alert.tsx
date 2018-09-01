@@ -8,7 +8,7 @@ import { Component, Prop } from '@stencil/core';
 export class PtAlert {
 
   @Prop() type: 'submit' | 'alert' = 'submit';
-  @Prop() variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+  @Prop() variant?: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger';
 
   get BEM(): string {
       const classArray = ['alert'];

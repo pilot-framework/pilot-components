@@ -1,0 +1,29 @@
+:host {
+    display: block;
+    margin: 1rem 0;
+}
+
+.alert {
+    overflow: hidden;
+    padding: $pt-space-x;
+}
+
+.alert--info {
+    background: $pt-alert-info-bg;
+    color: $pt-alert-info-color;
+}
+
+.alert--success {
+    background: $pt-alert-success-bg;
+    color: $pt-alert-success-color;
+}
+
+.alert--warning {
+    background: $pt-alert-warning-bg;
+    color: $pt-alert-warning-color;
+}
+
+.alert--danger {
+    background: $pt-alert-danger-bg;
+    color: $pt-alert-danger-color;
+}

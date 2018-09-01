@@ -1,14 +1,27 @@
 @import 'opencolor';
 
+/* Space */
+$pt-space-y: 1em 0 1rem;
+$pt-space-x: 0 1rem;
+$pt-button-padding: 0.75rem 1rem;
+$pt-button-padding-sm: 0.5rem 0.75rem;
+$pt-button-padding-lg: 1rem 1.5rem;
+
 /* Colors */
 $pt-white: #fff;
 $pt-primary-color: $oc-blue-9;
 $pt-secondary-color: $pt-white;
+$pt-info-color: $oc-blue-9;
+$pt-info-color-light: $oc-blue-2;
 $pt-success-color: $oc-green-9;
+$pt-success-color-light: $oc-green-2;
 $pt-warning-color: $oc-orange-9;
+$pt-warning-color-light: $oc-orange-2;
 $pt-danger-color: $oc-red-9;
+$pt-danger-color-light: $oc-red-2;
 
-$pt-button-primary-bg: $pt-primary-color;
+
+$pt-button-primary-bg: $oc-blue-9;
 $pt-button-primary-color: $pt-white;
 $pt-button-secondary-bg: $pt-white;
 $pt-button-secondary-color: $pt-primary-color;
@@ -19,11 +32,12 @@ $pt-button-warning-color: $pt-white;
 $pt-button-danger-bg: $pt-danger-color;
 $pt-button-danger-color: $pt-white;
 
-/* Space */
-$pt-space-y: 1em 0 1rem;
-$pt-space-x: 0 1rem;
-$pt-button-padding: 0.75rem 1rem;
-$pt-button-padding-sm: 0.5rem 0.75rem;
-$pt-button-padding-lg: 1rem 1.5rem;
 
-$pt-card-padding: 1rem;
+$pt-alert-info-bg: $pt-info-color-light;
+$pt-alert-info-color: $pt-info-color;
+$pt-alert-success-bg: $pt-success-color-light;
+$pt-alert-success-color: $pt-success-color;
+$pt-alert-warning-bg: $pt-warning-color-light;
+$pt-alert-warning-color: $pt-warning-color;
+$pt-alert-danger-bg: $pt-danger-color-light;
+$pt-alert-danger-color: $pt-danger-color;
