@@ -1,8 +1,9 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'pilot',
-  globalStyle: 'src/global/variables.css',
+  globalStyle: 'src/global/global.scss',
   outputTargets:[
     {
       type: 'dist'
@@ -11,5 +12,12 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null
     }
+  ],
+  plugins: [
+    sass({
+      injectGlobalPaths: [
+        'src/global/variables.scss'
+      ]
+    })
   ]
 };

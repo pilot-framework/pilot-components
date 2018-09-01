@@ -1,0 +1,29 @@
+@import 'opencolor';
+
+/* Colors */
+$pt-white: #fff;
+$pt-primary-color: $oc-blue-9;
+$pt-secondary-color: $pt-white;
+$pt-success-color: $oc-green-9;
+$pt-warning-color: $oc-orange-9;
+$pt-danger-color: $oc-red-9;
+
+$pt-button-primary-bg: $pt-primary-color;
+$pt-button-primary-color: $pt-white;
+$pt-button-secondary-bg: $pt-white;
+$pt-button-secondary-color: $pt-primary-color;
+$pt-button-success-bg: $pt-success-color;
+$pt-button-success-color: $pt-white;
+$pt-button-warning-bg: $pt-warning-color;
+$pt-button-warning-color: $pt-white;
+$pt-button-danger-bg: $pt-danger-color;
+$pt-button-danger-color: $pt-white;
+
+/* Space */
+$pt-space-y: 1em 0 1rem;
+$pt-space-x: 0 1rem;
+$pt-button-padding: 0.75rem 1rem;
+$pt-button-padding-sm: 0.5rem 0.75rem;
+$pt-button-padding-lg: 1rem 1.5rem;
+
+$pt-card-padding: 1rem;

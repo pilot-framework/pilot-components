@@ -1,0 +1,20 @@
+@import 'variables';
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    margin: 0;
+    font: 400 16px/1.5 sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,ol,ul,img {
+    margin: $pt-space-y;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

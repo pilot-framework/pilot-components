@@ -2,7 +2,7 @@ import { Component } from '@stencil/core';
 
 @Component({
   tag: 'pt-card-content',
-  styleUrl: 'pt-card-content.css',
+  styleUrl: 'pt-card-content.scss',
   shadow: true
 })
 export class PtCardContent {
@@ -15,9 +15,9 @@ export class PtCardContent {
 
   render() {
     return (
-      <card class={this.BEM}>
+      <div class={this.BEM}>
         <slot />
-      </card>
+      </div>
     );
   }
 }

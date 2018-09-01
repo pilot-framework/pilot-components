@@ -29,6 +29,41 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface PtAlert {
+      'type': 'submit' | 'alert';
+      'variant': 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+    }
+  }
+
+  interface HTMLPtAlertElement extends StencilComponents.PtAlert, HTMLStencilElement {}
+
+  var HTMLPtAlertElement: {
+    prototype: HTMLPtAlertElement;
+    new (): HTMLPtAlertElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-alert': HTMLPtAlertElement;
+  }
+  interface ElementTagNameMap {
+    'pt-alert': HTMLPtAlertElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-alert': JSXElements.PtAlertAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtAlertAttributes extends HTMLAttributes {
+      'type'?: 'submit' | 'alert';
+      'variant'?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface PtButton {
       'disabled': boolean;
       'size': 'sm' | 'lg';
@@ -93,6 +128,39 @@ declare global {
   namespace JSXElements {
     export interface PtCardContentAttributes extends HTMLAttributes {
 
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PtCardCover {
+      'src': any;
+    }
+  }
+
+  interface HTMLPtCardCoverElement extends StencilComponents.PtCardCover, HTMLStencilElement {}
+
+  var HTMLPtCardCoverElement: {
+    prototype: HTMLPtCardCoverElement;
+    new (): HTMLPtCardCoverElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-card-cover': HTMLPtCardCoverElement;
+  }
+  interface ElementTagNameMap {
+    'pt-card-cover': HTMLPtCardCoverElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-card-cover': JSXElements.PtCardCoverAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtCardCoverAttributes extends HTMLAttributes {
+      'src'?: any;
     }
   }
 }

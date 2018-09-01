@@ -1,0 +1,53 @@
+:host {
+    display: block;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: $pt-button-padding;
+    outline: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Variants */
+
+.button--primary {
+    background: $pt-button-primary-bg;
+    color: $pt-button-primary-color;
+}
+
+.button--secondary {
+    background: $pt-button-secondary-bg;
+    color: $pt-button-secondary-color;
+}
+
+.button--success {
+    background: $pt-button-success-bg;
+    color: $pt-button-success-color;
+}
+
+.button--warning {
+    background: $pt-button-warning-bg;
+    color: $pt-button-warning-color;
+}
+
+.button--danger {
+    background: $pt-button-danger-bg;
+    color: $pt-button-danger-color;
+}
+
+/* Size */
+
+.button--sm {
+    padding: $pt-button-padding-sm;
+}
+
+.button--lg {
+    padding: $pt-button-padding-lg;
+}
