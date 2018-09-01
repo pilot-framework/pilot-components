@@ -2,10 +2,10 @@ import { Component, Prop, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'pt-button',
-  styleUrl: 'pt-button.scss',
+  styleUrl: 'button.scss',
   shadow: true
 })
-export class PtButton {
+export class Button {
 
   @Prop() type: 'submit' | 'button' = 'submit';
   @Prop() variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';

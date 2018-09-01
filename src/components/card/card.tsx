@@ -2,10 +2,10 @@ import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'pt-card',
-  styleUrl: 'pt-card.scss',
+  styleUrl: 'card.scss',
   shadow: true
 })
-export class PtCard {
+export class Card {
   @Prop() imageSrc: any;
 
   get BEM(): string {

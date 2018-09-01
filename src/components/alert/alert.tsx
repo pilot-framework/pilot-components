@@ -2,10 +2,10 @@ import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'pt-alert',
-  styleUrl: 'pt-alert.scss',
+  styleUrl: 'alert.scss',
   shadow: true
 })
-export class PtAlert {
+export class Alert {
 
   @Prop() type: 'submit' | 'alert' = 'submit';
   @Prop() variant?: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger';

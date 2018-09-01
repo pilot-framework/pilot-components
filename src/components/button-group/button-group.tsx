@@ -2,10 +2,10 @@ import { Component } from '@stencil/core';
 
 @Component({
   tag: 'pt-button-group',
-  styleUrl: 'pt-button-group.scss',
+  styleUrl: 'button-group.scss',
   shadow: false
 })
-export class PtButtonGroup {
+export class ButtonGroup {
 
   get BEM(): string {
       const classArray = ['button-group'];
