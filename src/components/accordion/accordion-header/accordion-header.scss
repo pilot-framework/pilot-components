@@ -1,0 +1,22 @@
+:host {
+    display: block;
+}
+
+.accordion-header {
+    cursor: pointer;
+}
+
+.accordion-header__heading {
+    display: flex;
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+.accordion-header__title {
+    flex: 1 1;
+    margin: 0;
+}
+
+.accordion-header__icon {
+    flex: 0 0;
+}

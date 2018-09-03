@@ -3,7 +3,7 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'pt-accordion-content',
   styleUrl: 'accordion-content.scss',
-  shadow: false
+  shadow: true
 })
 export class AccordionContent {
   @Prop() isOpen: boolean = false;

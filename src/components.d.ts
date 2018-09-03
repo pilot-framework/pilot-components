@@ -64,6 +64,7 @@ declare global {
   namespace StencilComponents {
     interface PtAccordionHeader {
       'isOpen': boolean;
+      'title': string;
     }
   }
 
@@ -87,6 +88,7 @@ declare global {
   namespace JSXElements {
     export interface PtAccordionHeaderAttributes extends HTMLAttributes {
       'isOpen'?: boolean;
+      'title'?: string;
     }
   }
 }
@@ -96,7 +98,8 @@ declare global {
 
   namespace StencilComponents {
     interface PtAccordionItem {
-
+      'isOpen': boolean;
+      'title': string;
     }
   }
 
@@ -119,7 +122,8 @@ declare global {
   }
   namespace JSXElements {
     export interface PtAccordionItemAttributes extends HTMLAttributes {
-
+      'isOpen'?: boolean;
+      'title'?: string;
     }
   }
 }

@@ -3,7 +3,7 @@ import { Component } from '@stencil/core';
 @Component({
   tag: 'pt-accordion',
   styleUrl: 'accordion.scss',
-  shadow: false
+  shadow: true
 })
 export class Accordion {
 
@@ -15,9 +15,9 @@ export class Accordion {
 
   render() {
     return (
-      <div class={this.BEM}>
+      <ul class={this.BEM}>
         <slot />
-      </div>
+      </ul>
     );
   }
 }

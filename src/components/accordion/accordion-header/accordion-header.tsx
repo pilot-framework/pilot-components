@@ -3,10 +3,11 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'pt-accordion-header',
   styleUrl: 'accordion-header.scss',
-  shadow: false
+  shadow: true
 })
 export class AccordionHeader {
-  @Prop() isOpen: boolean = false;
+    @Prop() title: string = '';
+    @Prop() isOpen: boolean = false;
 
   get BEM(): string {
       const classArray = ['accordion-header'];
@@ -18,10 +19,21 @@ export class AccordionHeader {
       return classArray.join(' ');
   }
 
+  get icon(): string {
+      if(this.isOpen) {
+        return '#arrow-up'
+      } else {
+        return '#arrow-down'
+      }
+  }
+
   render() {
     return (
       <div class={this.BEM}>
-        <slot />
+        <h3 class="accordion-header__heading">
+          <span class="accordion-header__title">{this.title}</span>
+          <pt-icon class="accordion-header__icon" variant={`/assets/sprite.svg${this.icon}`}></pt-icon>
+        </h3>
       </div>
     );
   }

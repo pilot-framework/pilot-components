@@ -1,0 +1,12 @@
+:host {
+    display: block;
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 1rem;
+
+    &.is-open {
+        display: block;
+    }
+}
