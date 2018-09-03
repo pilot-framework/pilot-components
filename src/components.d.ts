@@ -29,6 +29,105 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface PtAccordionContent {
+      'isOpen': boolean;
+    }
+  }
+
+  interface HTMLPtAccordionContentElement extends StencilComponents.PtAccordionContent, HTMLStencilElement {}
+
+  var HTMLPtAccordionContentElement: {
+    prototype: HTMLPtAccordionContentElement;
+    new (): HTMLPtAccordionContentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-accordion-content': HTMLPtAccordionContentElement;
+  }
+  interface ElementTagNameMap {
+    'pt-accordion-content': HTMLPtAccordionContentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-accordion-content': JSXElements.PtAccordionContentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtAccordionContentAttributes extends HTMLAttributes {
+      'isOpen'?: boolean;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PtAccordionHeader {
+      'isOpen': boolean;
+    }
+  }
+
+  interface HTMLPtAccordionHeaderElement extends StencilComponents.PtAccordionHeader, HTMLStencilElement {}
+
+  var HTMLPtAccordionHeaderElement: {
+    prototype: HTMLPtAccordionHeaderElement;
+    new (): HTMLPtAccordionHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-accordion-header': HTMLPtAccordionHeaderElement;
+  }
+  interface ElementTagNameMap {
+    'pt-accordion-header': HTMLPtAccordionHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-accordion-header': JSXElements.PtAccordionHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtAccordionHeaderAttributes extends HTMLAttributes {
+      'isOpen'?: boolean;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PtAccordionItem {
+
+    }
+  }
+
+  interface HTMLPtAccordionItemElement extends StencilComponents.PtAccordionItem, HTMLStencilElement {}
+
+  var HTMLPtAccordionItemElement: {
+    prototype: HTMLPtAccordionItemElement;
+    new (): HTMLPtAccordionItemElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-accordion-item': HTMLPtAccordionItemElement;
+  }
+  interface ElementTagNameMap {
+    'pt-accordion-item': HTMLPtAccordionItemElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-accordion-item': JSXElements.PtAccordionItemAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtAccordionItemAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface PtAccordion {
 
     }
@@ -91,39 +190,6 @@ declare global {
       'icon'?: string;
       'type'?: 'submit' | 'alert';
       'variant'?: 'info' | 'success' | 'warning' | 'danger';
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
-    interface PtButtonGroup {
-
-    }
-  }
-
-  interface HTMLPtButtonGroupElement extends StencilComponents.PtButtonGroup, HTMLStencilElement {}
-
-  var HTMLPtButtonGroupElement: {
-    prototype: HTMLPtButtonGroupElement;
-    new (): HTMLPtButtonGroupElement;
-  };
-  interface HTMLElementTagNameMap {
-    'pt-button-group': HTMLPtButtonGroupElement;
-  }
-  interface ElementTagNameMap {
-    'pt-button-group': HTMLPtButtonGroupElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'pt-button-group': JSXElements.PtButtonGroupAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface PtButtonGroupAttributes extends HTMLAttributes {
-
     }
   }
 }
@@ -212,6 +278,7 @@ declare global {
 
   namespace StencilComponents {
     interface PtIcon {
+      'size': 'lg' | 'default';
       'variant': string;
     }
   }
@@ -235,6 +302,7 @@ declare global {
   }
   namespace JSXElements {
     export interface PtIconAttributes extends HTMLAttributes {
+      'size'?: 'lg' | 'default';
       'variant'?: string;
     }
   }

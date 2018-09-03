@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <title>Pilot components</title>
   <link rel="stylesheet" href="/build/pilot.css">
   <script src="/build/pilot.js"></script>
 
@@ -23,28 +24,34 @@
         <pt-icon variant="/assets/sprite.svg#fingerprint"></pt-icon> Icon example
       </p>
       <p class="small">
-          <pt-icon variant="/assets/sprite.svg#fingerprint"></pt-icon> Small Icon example
-        </p>
+        <pt-icon variant="/assets/sprite.svg#fingerprint"></pt-icon> Small Icon example
+      </p>
+      <p class="small">
+        <pt-icon variant="/assets/sprite.svg#fingerprint"></pt-icon> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum.
+      </p>
+      <p class="small">
+        <pt-icon variant="/assets/sprite.svg#fingerprint" size="lg" style="float:left"></pt-icon> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum.
+      </p>
     </div>
     <div id="buttons">
-        <h2>Buttons</h2>
-        <h3>Examples</h3>
-          <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint"></pt-button>
-          <pt-button variant="primary" text="Primary button"></pt-button>
-          <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint" text="Primary button"></pt-button>
-          <pt-button variant="primary" icon-right="/assets/sprite.svg#fingerprint" text="Primary button"></pt-button>
-          <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint" icon-right="/assets/sprite.svg#fingerprint" text="Primary button"></pt-button>
-          <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint" icon-right="/assets/sprite.svg#fingerprint" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum."></pt-button>
-        <h3>Variants</h3>
-        <pt-button variant="primary" text="Primary button"></pt-button>
-        <pt-button variant="secondary" text="Secondary button"></pt-button>
-        <pt-button variant="success" text="Success button"></pt-button>
-        <pt-button variant="warning" text="Warning button"></pt-button>
-        <pt-button variant="danger" text="Danger button"></pt-button>
-        <h3>Sizes</h3>
-        <pt-button variant="success" size="sm" text="Small button"></pt-button>
-        <pt-button variant="success" text="Default button"></pt-button>
-        <pt-button variant="danger" size="lg" text="Large button"></pt-button>
+      <h2>Buttons</h2>
+      <h3>Examples</h3>
+      <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint"></pt-button>
+      <pt-button variant="primary" text="Primary button"></pt-button>
+      <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint" text="Primary button"></pt-button>
+      <pt-button variant="primary" icon-right="/assets/sprite.svg#fingerprint" text="Primary button"></pt-button>
+      <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint" icon-right="/assets/sprite.svg#fingerprint" text="Primary button"></pt-button>
+      <pt-button variant="primary" icon-left="/assets/sprite.svg#fingerprint" icon-right="/assets/sprite.svg#fingerprint" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum."></pt-button>
+      <h3>Variants</h3>
+      <pt-button variant="primary" text="Primary button"></pt-button>
+      <pt-button variant="secondary" text="Secondary button"></pt-button>
+      <pt-button variant="success" text="Success button"></pt-button>
+      <pt-button variant="warning" text="Warning button"></pt-button>
+      <pt-button variant="danger" text="Danger button"></pt-button>
+      <h3>Sizes</h3>
+      <pt-button variant="success" size="sm" text="Small button"></pt-button>
+      <pt-button variant="success" text="Default button"></pt-button>
+      <pt-button variant="danger" size="lg" text="Large button"></pt-button>
     </div>
     <div id="alerts">
       <h2>Alerts</h2>
@@ -60,6 +67,30 @@
       <pt-alert variant="warning" icon="/assets/sprite.svg#fingerprint">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi atque eos cupiditate perferendis dolorum, ut porro quam repellendus esse impedit a quasi magnam alias, officiis natus quibusdam vel nostrum.</p>
       </pt-alert>
+    </div>
+    <div id="accordion">
+      <pt-accordion>
+        <pt-accordion-item>
+          <pt-accordion-header>
+            <h2>heading 1</h2>
+          </pt-accordion-header>
+          <pt-accordion-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil at inventore, modi libero cupiditate nobis temporibus accusamus quas minima corrupti delectus, totam expedita alias incidunt sed quibusdam atque quisquam.
+            </p>
+          </pt-accordion-content>
+        </pt-accordion-item>
+        <pt-accordion-item>
+            <pt-accordion-header>
+              <h2>heading 2</h2>
+            </pt-accordion-header>
+            <pt-accordion-content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil at inventore, modi libero cupiditate nobis temporibus accusamus quas minima corrupti delectus, totam expedita alias incidunt sed quibusdam atque quisquam.
+              </p>
+            </pt-accordion-content>
+        </pt-accordion-item>
+      </pt-accordion>
     </div>
     <div id="card">
       <h2>Card</h2>

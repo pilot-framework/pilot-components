@@ -1,14 +1,14 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'pt-button-group',
-  styleUrl: 'button-group.scss',
+  tag: 'pt-accordion-item',
+  styleUrl: 'accordion-item.scss',
   shadow: false
 })
-export class ButtonGroup {
+export class AccordionItem {
 
   get BEM(): string {
-      const classArray = ['button-group'];
+      const classArray = ['accordion-item'];
 
       return classArray.join(' ');
   }

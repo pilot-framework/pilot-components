@@ -5,7 +5,7 @@ import { Component } from '@stencil/core';
   styleUrl: 'accordion.scss',
   shadow: false
 })
-export class AccordionGroup {
+export class Accordion {
 
   get BEM(): string {
       const classArray = ['accordion'];
