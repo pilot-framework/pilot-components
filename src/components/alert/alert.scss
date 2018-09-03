@@ -1,11 +1,24 @@
 :host {
     display: block;
-    margin: 1rem 0;
 }
 
 .alert {
+    display: flex;
     overflow: hidden;
     padding: $pt-space-x;
+}
+
+.alert__icon {
+    flex: 0 0 2rem;
+
+    pt-icon {
+        display: block;
+        margin: 1em 0;
+    }
+}
+
+.alert__content {
+    flex: 1 1;
 }
 
 .alert--info {

@@ -8,25 +8,22 @@ import { Component, Prop, Event, EventEmitter } from '@stencil/core';
 export class Button {
 
   @Prop() type: 'submit' | 'button' = 'submit';
-  @Prop() variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
-  @Prop() size?: 'sm' | 'lg';
-  @Prop() disabled?: boolean;
+  @Prop() text: string;
+  @Prop() iconLeft: string;
+  @Prop() iconRight: string;
+  @Prop() variant: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'link' = 'link';
+  @Prop() size: 'default' | 'sm' | 'lg' = 'default';
+  @Prop() disabled: boolean = false;
   @Event() onClick: EventEmitter;
 
   get BEM(): string {
       const classArray = ['button'];
 
-      if(this.variant) {
-          classArray.push(`${classArray[0]}--${this.variant}`);
-      }
+      classArray.push(`${classArray[0]}--${this.variant}`);
 
-      if(this.size) {
-        classArray.push(`${classArray[0]}--${this.size}`);
-      }
+      classArray.push(`${classArray[0]}--${this.size}`);
 
-      if(this.disabled) {
-        classArray.push(`${classArray[0]}--disabled`);
-      }
+      classArray.push(`${classArray[0]}--disabled`);
 
       return classArray.join(' ');
   }
@@ -38,10 +35,16 @@ export class Button {
     // }
   }
 
+  addText() {
+    return <span class="button__text">{this.text}</span>;
+  }
+
   render() {
     return (
       <button type={this.type} class={this.BEM} disabled={this.disabled} onClick={this.handleClick}>
-        <slot />
+        {this.iconLeft && <pt-icon class="button__icon" variant={this.iconLeft}></pt-icon>}
+        {this.text && this.addText()}
+        {this.iconRight && <pt-icon class="button__icon" variant={this.iconRight}></pt-icon>}
       </button>
     );
   }

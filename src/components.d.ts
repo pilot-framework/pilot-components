@@ -29,9 +29,43 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface PtAccordion {
+
+    }
+  }
+
+  interface HTMLPtAccordionElement extends StencilComponents.PtAccordion, HTMLStencilElement {}
+
+  var HTMLPtAccordionElement: {
+    prototype: HTMLPtAccordionElement;
+    new (): HTMLPtAccordionElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-accordion': HTMLPtAccordionElement;
+  }
+  interface ElementTagNameMap {
+    'pt-accordion': HTMLPtAccordionElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-accordion': JSXElements.PtAccordionAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtAccordionAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface PtAlert {
+      'icon': string;
       'type': 'submit' | 'alert';
-      'variant': 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger';
+      'variant': 'info' | 'success' | 'warning' | 'danger';
     }
   }
 
@@ -54,8 +88,9 @@ declare global {
   }
   namespace JSXElements {
     export interface PtAlertAttributes extends HTMLAttributes {
+      'icon'?: string;
       'type'?: 'submit' | 'alert';
-      'variant'?: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger';
+      'variant'?: 'info' | 'success' | 'warning' | 'danger';
     }
   }
 }
@@ -99,9 +134,12 @@ declare global {
   namespace StencilComponents {
     interface PtButton {
       'disabled': boolean;
-      'size': 'sm' | 'lg';
+      'iconLeft': string;
+      'iconRight': string;
+      'size': 'default' | 'sm' | 'lg';
+      'text': string;
       'type': 'submit' | 'button';
-      'variant': 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+      'variant': 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'link';
     }
   }
 
@@ -125,10 +163,13 @@ declare global {
   namespace JSXElements {
     export interface PtButtonAttributes extends HTMLAttributes {
       'disabled'?: boolean;
+      'iconLeft'?: string;
+      'iconRight'?: string;
       'onOnClick'?: (event: CustomEvent) => void;
-      'size'?: 'sm' | 'lg';
+      'size'?: 'default' | 'sm' | 'lg';
+      'text'?: string;
       'type'?: 'submit' | 'button';
-      'variant'?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+      'variant'?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'link';
     }
   }
 }
@@ -162,6 +203,39 @@ declare global {
   namespace JSXElements {
     export interface PtCardAttributes extends HTMLAttributes {
       'imageSrc'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PtIcon {
+      'variant': string;
+    }
+  }
+
+  interface HTMLPtIconElement extends StencilComponents.PtIcon, HTMLStencilElement {}
+
+  var HTMLPtIconElement: {
+    prototype: HTMLPtIconElement;
+    new (): HTMLPtIconElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-icon': HTMLPtIconElement;
+  }
+  interface ElementTagNameMap {
+    'pt-icon': HTMLPtIconElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-icon': JSXElements.PtIconAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtIconAttributes extends HTMLAttributes {
+      'variant'?: string;
     }
   }
 }
