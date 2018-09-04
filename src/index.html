@@ -11,13 +11,14 @@
 </head>
 <body>
   <div style="max-width: 768px;margin: auto;padding: 0 1rem;">
-    <h1>Pilot Components</h1>
+    <img src="/assets/pilot.jpg" width="64" alt="">
     <ul>
         <li><a href="#icons">Icons</a></li>
       <li><a href="#buttons">Buttons</a></li>
       <li><a href="#alerts">Alerts</a></li>
       <li><a href="#accordion">Accordion</a></li>
       <li><a href="#cards">Cards</a></li>
+      <li><a href="#modal">Modal</a></li>
     </ul>
     <div id="icons">
       <h2>Icons</h2>
@@ -90,7 +91,24 @@
         <h1>This is heading 1</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio placeat tempore aliquid aperiam, magnam repudiandae dolores, officia eius assumenda blanditiis. Expedita provident ipsa atque debitis, repudiandae perferendis voluptatem accusamus!</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio placeat tempore aliquid aperiam, magnam repudiandae dolores, officia eius assumenda blanditiis. Expedita provident ipsa atque debitis, repudiandae perferendis voluptatem accusamus!</p>
+        <ul>
+          <li><a href="#">#test</a></li>
+        </ul>
       </pt-card>
+      <div id="modal">
+        <pt-button id="btn-open-modal" type="button" variant="primary" text="Open modal"></pt-button>
+        <pt-modal id="modal-example">
+          <h3>Heading 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati labore, iure, porro quidem veritatis quae maiores provident commodi similique ratione recusandae repellat aperiam blanditiis. Explicabo inventore corrupti numquam distinctio.</p>
+        </pt-modal>
+        <script>
+          const btnOpenModalEl = document.getElementById('btn-open-modal');
+          const modalEl = document.getElementById('modal-example');
+          btnOpenModalEl.addEventListener('click', () => {
+            modalEl.open();
+          })
+        </script>
+      </div>
   </div>
   </div>
 </body>

@@ -41,7 +41,7 @@ export class Button {
 
   render() {
     return (
-      <button type={this.type} class={this.BEM} disabled={this.disabled} onClick={this.handleClick}>
+      <button type={this.type} class={this.BEM} disabled={this.disabled}>
         {this.iconLeft && <pt-icon class="button__icon" variant={this.iconLeft}></pt-icon>}
         {this.text && this.addText()}
         {this.iconRight && <pt-icon class="button__icon" variant={this.iconRight}></pt-icon>}

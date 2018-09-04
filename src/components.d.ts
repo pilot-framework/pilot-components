@@ -312,6 +312,39 @@ declare global {
   }
 }
 
+
+declare global {
+
+  namespace StencilComponents {
+    interface PtModal {
+      'open': () => void;
+    }
+  }
+
+  interface HTMLPtModalElement extends StencilComponents.PtModal, HTMLStencilElement {}
+
+  var HTMLPtModalElement: {
+    prototype: HTMLPtModalElement;
+    new (): HTMLPtModalElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-modal': HTMLPtModalElement;
+  }
+  interface ElementTagNameMap {
+    'pt-modal': HTMLPtModalElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-modal': JSXElements.PtModalAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtModalAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }
 
 export declare function defineCustomElements(window: any): void;
