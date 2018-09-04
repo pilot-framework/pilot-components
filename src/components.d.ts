@@ -206,6 +206,7 @@ declare global {
       'disabled': boolean;
       'iconLeft': string;
       'iconRight': string;
+      'rounded': boolean;
       'size': 'default' | 'sm' | 'lg';
       'text': string;
       'type': 'submit' | 'button';
@@ -236,6 +237,7 @@ declare global {
       'iconLeft'?: string;
       'iconRight'?: string;
       'onOnClick'?: (event: CustomEvent) => void;
+      'rounded'?: boolean;
       'size'?: 'default' | 'sm' | 'lg';
       'text'?: string;
       'type'?: 'submit' | 'button';
@@ -273,6 +275,39 @@ declare global {
   namespace JSXElements {
     export interface PtCardAttributes extends HTMLAttributes {
       'imageSrc'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PtFab {
+      'icon': string;
+    }
+  }
+
+  interface HTMLPtFabElement extends StencilComponents.PtFab, HTMLStencilElement {}
+
+  var HTMLPtFabElement: {
+    prototype: HTMLPtFabElement;
+    new (): HTMLPtFabElement;
+  };
+  interface HTMLElementTagNameMap {
+    'pt-fab': HTMLPtFabElement;
+  }
+  interface ElementTagNameMap {
+    'pt-fab': HTMLPtFabElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'pt-fab': JSXElements.PtFabAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PtFabAttributes extends HTMLAttributes {
+      'icon'?: string;
     }
   }
 }

@@ -11,8 +11,10 @@ img {
 .card {
     position: relative;
     margin: $pt-space-y;
+    box-shadow: 0 0 0.25rem rgba(0,0,0,.3);
 }
 
 .card__content {
     padding: $pt-space-x;
+    overflow: hidden;
 }

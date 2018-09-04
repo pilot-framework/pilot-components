@@ -21,13 +21,16 @@
 		c0-1.07-0.93-1.94-2.08-1.94s-2.08,0.87-2.08,1.94c0,1.71,0.66,3.31,1.87,4.51c0.95,0.94,1.86,1.46,3.27,1.85
 		c0.27,0.07,0.42,0.35,0.35,0.61C15.33,21.85,15.12,22,14.91,22z"/>
   </symbol>
-	<symbol id="arrow-up" viewBox="0 0 24 24">
+	<symbol id="arrow-up" viewBox="0 0 24 24" fill="currentColor">
 		<path d="M7.41,15.41L12,10.83l4.59,4.58L18,14l-6-6l-6,6L7.41,15.41z"/>
 	</symbol>
-	<symbol id="arrow-down" viewBox="0 0 24 24">
+	<symbol id="arrow-down" viewBox="0 0 24 24" fill="currentColor">
 		<path d="M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z"/>
 	</symbol>
-	<symbol id="close" viewBox="0 0 24 24">
+	<symbol id="close" viewBox="0 0 24 24" fill="currentColor">
 		<path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41z"/>
+	</symbol>
+	<symbol id="add" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M19,13h-6v6h-2v-6H5v-2h6V5h2v6h6V13z"/>
 	</symbol>
 </svg>

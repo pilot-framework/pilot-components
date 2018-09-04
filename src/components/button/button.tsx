@@ -14,6 +14,7 @@ export class Button {
   @Prop() variant: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'link' = 'link';
   @Prop() size: 'default' | 'sm' | 'lg' = 'default';
   @Prop() disabled: boolean = false;
+  @Prop() rounded: boolean = false;
   @Event() onClick: EventEmitter;
 
   get BEM(): string {
@@ -23,7 +24,13 @@ export class Button {
 
       classArray.push(`${classArray[0]}--${this.size}`);
 
-      classArray.push(`${classArray[0]}--disabled`);
+      if (this.rounded) {
+        classArray.push(`${classArray[0]}--rounded`);
+      }
+
+      if (this.disabled) {
+        classArray.push(`${classArray[0]}--disabled`);
+      }
 
       return classArray.join(' ');
   }
